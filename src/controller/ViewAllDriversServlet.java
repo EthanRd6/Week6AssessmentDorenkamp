@@ -33,11 +33,11 @@ public class ViewAllDriversServlet extends HttpServlet {
 		
 		String path = "/drivers-list.jsp";
 		
-		if(dao.showAllDrivers().isEmpty()) {
-				path = "/driverIndex.html";
-		}
+		//if(dao.showAllDrivers().isEmpty()) {
+		//		path = "/driverIndex.html";
+		//}
 		
-		getServletContext().getRequestDispatcher(path).forward(request, response);
+		getServletContext().getRequestDispatcher("/drivers-list.jsp").forward(request, response);
 	}
 
 	/**
